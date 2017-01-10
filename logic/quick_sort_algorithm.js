@@ -8,12 +8,9 @@ module.exports = function quickSort(numArr) {
   }
   for(var i = 1; i < numArr.length; i++) {
     if(pivot > numArr[i]) {
-      // console.log('pivot: ', pivot);
       leftSide.push(numArr[i]);
-      // console.log('leftSide: ', leftSide);
     } else {
       rightSide.push(numArr[i]);
-      // console.log('rightSide: ', rightSide);
 
     }
   }
