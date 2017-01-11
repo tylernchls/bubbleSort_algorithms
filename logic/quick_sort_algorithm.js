@@ -5,7 +5,7 @@ numArr.length <=1 then starts to unravel, concatenating on its way up. Output
 will be a sorted array.
 *Run live-server and debugger to watch the process
 */
-module.exports = function quickSort(numArr) {
+ module.exports = function quickSort(numArr) {
   let pivot = numArr[0];
   let leftSide = [];
   let rightSide = [];
@@ -25,6 +25,8 @@ module.exports = function quickSort(numArr) {
   return quickSort(leftSide).concat(pivot, quickSort(rightSide));
 
 };
+
+
 
 
 
